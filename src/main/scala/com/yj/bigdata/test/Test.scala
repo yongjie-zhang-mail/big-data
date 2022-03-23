@@ -10,8 +10,9 @@ object Test {
     def main(args: Array[String]): Unit = {
     
         val spark = SparkSession
-            .builder
-            .master("local")
+          .builder
+          //            .master("local")
+          .master("yarn")
             .appName("HdfsTest")
             .getOrCreate()
     
