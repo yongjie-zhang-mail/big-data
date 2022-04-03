@@ -32,7 +32,7 @@ object Test {
             .groupBy("_1")
             .count()
             .show()
-    
+
     }
     
 }
